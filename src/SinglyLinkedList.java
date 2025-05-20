@@ -63,4 +63,14 @@ public class SinglyLinkedList {
 
     }
 
+    public static void main(String[] args) {
+        SinglyLinkedList li = new SinglyLinkedList();
+        li.insert(10);
+        li.insert(20);
+        li.insert(30);
+        li.insert(40);
+        li.insert(50);
+        li.insert(60);
+    }
+
 }
