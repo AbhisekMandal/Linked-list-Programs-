@@ -26,4 +26,19 @@ public class SinglyLinkedList {
         }
     }
 
+    //Display nodes
+    public void display(){
+        Node temp = head;
+        if (head == null){
+            System.out.println("There is no data empty list");
+        }
+        System.out.println("Singly Linked-list");
+        while (temp != null){
+            System.out.println(temp.data+" ->");
+            temp=temp.next;
+
+        }
+        System.out.println("null");
+    }
+
 }
