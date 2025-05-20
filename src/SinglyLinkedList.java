@@ -34,7 +34,7 @@ public class SinglyLinkedList {
         }
         System.out.println("Singly Linked-list");
         while (temp != null){
-            System.out.println(temp.data+" ->");
+            System.out.print(temp.data+" -> ");
             temp=temp.next;
 
         }
@@ -71,6 +71,8 @@ public class SinglyLinkedList {
         li.insert(40);
         li.insert(50);
         li.insert(60);
+        li.display();
+        li.delete(50);
     }
 
 }
