@@ -40,5 +40,27 @@ public class SinglyLinkedList {
         }
         System.out.println("null");
     }
+    public void delete(int value){
+        if (head==null){
+            System.out.println("Empty list");
+            return;
+        }
+        if (head.data == value){
+            head = head.next;
+            System.out.println("Deleted value: "+value);
+            return;
+        }
+        Node temp = head;
+        while (temp.next != null && temp.next.data !=  value){
+            temp= temp.next;
+        }
+        if (temp.next == null){
+            System.out.println("value not found: "+ value);
+        }else{
+            temp.next = temp.next.next;
+            System.out.println("Deleted value: "+value);
+        }
+
+    }
 
 }
